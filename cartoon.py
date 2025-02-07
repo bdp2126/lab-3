@@ -10,8 +10,8 @@ def prompt_for_image():
     """
     search_query = input("Enter name of a personality: ")
     try:
-        pass
-        # TODO (and remove the pass statement above)
+        wikipedia.search(search_query, results=3)
+        
     except Exception as e:
         print(f"Error: Unable to find image for the given name: {e}")
         return None, None
